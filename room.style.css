@@ -1,0 +1,137 @@
+/* Styles for the Room Listings and Search Plugin */
+
+.room-listing-search-form {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Updated Search Form Layout */
+.room-listing-search-form label {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.room-listing-search-form select,
+.room-listing-search-form input[type="date"],
+.room-listing-search-form button {
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+    font-size: 1em;
+}
+
+/* Custom layout for filters to display each input in a new line */
+.filters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.room-listing-search-form button {
+    background-color: #0073aa;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-weight: bold;
+    width: 100%;
+}
+
+#search-button {
+    align-self: start;
+}
+
+/* Room Listings */
+.room-listings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.room {
+    border: 2px solid #000;
+    padding: 15px;
+    width: calc(33.33% - 20px);
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.room:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.room h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.room p {
+    margin: 8px 0;
+    font-size: 0.95em;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Room Details */
+.room-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.room-details h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.room-details p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Room Images */
+.room-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+/* Room Reviews */
+.room-reviews h3 {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.room-reviews p {
+    font-style: italic;
+    color: #555;
+}
